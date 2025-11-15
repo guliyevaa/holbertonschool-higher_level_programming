@@ -6,4 +6,4 @@ def uppercase(str):
             result += chr(ord(c) - 32)  # kiçik hərfi böyük hərfə çevir
         else:
             result += c  # digər simvollar olduğu kimi qalır
-    print(result)
+    print("{}".format(result))
