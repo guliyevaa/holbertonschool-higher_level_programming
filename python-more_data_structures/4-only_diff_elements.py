@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-def def only_diff_elements(set_1, set_2):
-   result = set_1.union(set_2)
+def only_diff_elements(set_1, set_2):
+    """Return a set of elements present in only one of the two sets using union."""
+    return (set_1 - set_2).union(set_2 - set_1)
