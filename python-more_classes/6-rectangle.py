@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module that defines a Rectangle class with instance counter.
+Module defines a Rectangle class with instance counter.
 """
 
 
