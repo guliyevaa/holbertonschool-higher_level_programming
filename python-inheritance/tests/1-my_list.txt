@@ -2,6 +2,7 @@
 tests/1-my_list_7.txt: Check print_sorted() with negative numbers.
 """
 # Import the class
+>>> from my_list import MyList
 MyList = _import_('1-my_list').MyList
 # Initialize a list with mixed positive, negative, and zero numbers
 >>> my_list = MyList()
