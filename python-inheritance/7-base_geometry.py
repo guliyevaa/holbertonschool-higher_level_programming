@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """BaseGeometry class with area() and integer_validator() methods."""
 
+
 class BaseGeometry:
     """BaseGeometry class."""
 
