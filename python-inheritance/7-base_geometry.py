@@ -1,4 +1,4 @@
-`#!/usr/bin/python3
+#!/usr/bin/python3
 """BaseGeometry class with area() and integer_validator() methods."""
 
 
