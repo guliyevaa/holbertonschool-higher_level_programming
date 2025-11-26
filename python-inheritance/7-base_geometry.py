@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+`#!/usr/bin/python3
 """BaseGeometry class with area() and integer_validator() methods."""
 
 
@@ -12,6 +12,6 @@ class BaseGeometry:
     def integer_validator(self, name, value):
         """Validate that value is an integer greater than 0."""
         if type(value) is not int:
-            raise TypeError(f"{name} must be an integer")
+            raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))
