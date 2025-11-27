@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-Class Student that defines a student (based on 9-student.py)
+Class Student that defines a student
 """
 
 
 class Student:
-    """Defines a student by first name, last name, and age"""
+    """Defines a student by first and last name, and age"""
 
     def __init__(self, first_name, last_name, age):
         """Initialize student attributes."""
