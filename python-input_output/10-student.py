@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-Class Student that defines a student
+Class Student that defines a student (based on 9-student.py)
 """
 
 
 class Student:
-    """Defines a student by first and last name, and age"""
+    """Defines a student by first name, last name, and age."""
 
     def __init__(self, first_name, last_name, age):
         """Initialize student attributes."""
@@ -15,12 +15,16 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-        Returns dictionary representation of instance.
+        Returns dictionary representation of the instance.
         If attrs is a list of strings, return only those attributes.
-        Otherwise return all.
+        Otherwise return all attributes.
         """
-        if isinstance(attrs, list) and all(type(x) == str for x in attrs):
-            # return only requested attributes that exist
-            return {key: getattr(self, key) for key in attrs if hasattr(self, key)}
-        # return all attributes
+        if (isinstance(attrs, list) and
+                all(isinstance(x, str) for x in attrs)):
+            result = {}
+            for key in attrs:
+                if hasattr(self, key):
+                    result[key] = getattr(self, key)
+            return result
+
         return self.__dict__
