@@ -1,2 +1,2 @@
 -- Create Database
-create table hbtn_0c_0();
+create table if it not exists hbtn_0c_0;
