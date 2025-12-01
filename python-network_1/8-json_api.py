@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""POST request to search_user and prints the result"""
+"""POST request"""
 
 import requests
 import sys
