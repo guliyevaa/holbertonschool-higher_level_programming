@@ -6,7 +6,7 @@ import sys
 
 if __name__ == "__main__":
     username = sys.argv[1]
-    token = sys.argv[2]  # personal access token as password
+    token = sys.argv[2]
 
     url = "https://api.github.com/user"
 
@@ -16,4 +16,4 @@ if __name__ == "__main__":
         data = response.json()
         print(data.get("id"))
     else:
-        print("Error: {}".format(response.status_code))
+        print(None)
