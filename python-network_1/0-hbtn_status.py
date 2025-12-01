@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/python3
 from urllib import request
 
 response = request.urlopen("https://intranet.hbtn.io/status")
