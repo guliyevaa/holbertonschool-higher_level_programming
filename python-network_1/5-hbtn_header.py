@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-"""Fetches https://intranet.hbtn.io/status using requests"""
+"""Displays the value of X-Request-Id in the response header"""
 
 import requests
+import sys
 
 if __name__ == "__main__":
-    url = "https://intranet.hbtn.io/status"
+    url = sys.argv[1]
 
     response = requests.get(url)
-    body = response.text
-
-    print("Body response:")
-    print("\t- type: {}".format(type(body)))
-    print("\t- content: {}".format(body))
+    print(response.headers.get("X-Request-Id"))
