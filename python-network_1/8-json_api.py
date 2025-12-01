@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""POST request"""
+"""Sends a POST request to search_user and prints the result"""
 
 import requests
 import sys
 
 if __name__ == "__main__":
     q = sys.argv[1] if len(sys.argv) > 1 else ""
-
     url = "http://0.0.0.0:5000/search_user"
     data = {"q": q}
 
@@ -15,7 +14,9 @@ if __name__ == "__main__":
         json_response = response.json()
 
         if json_response:
-            print("[{}] {}".format(json_response.get("id"), json_response.get("name")))
+            print("[{}] {}".format(
+                json_response.get("id"), json_response.get("name")
+            ))
         else:
             print("No result")
     except ValueError:
